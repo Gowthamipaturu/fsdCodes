@@ -4,9 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html tables</title>
+    <title>html tables, Inline, Internal & External CSS</title>
+    <!-- Internal CSS -->
+    <style>
+        h1 {color: black;}
+        h3 {color: red;}
+        /* If we need h1 & h3 both need to be in same color */
+        h1,h3 {color: blue;}
+    </style>
+
 </head>
 <body>
+    <!-- **********tables********* -->
     <table>
         <tr style="color: green;">
             <th>Name</th>
@@ -24,5 +33,36 @@
             <td>Bangalore</td>
         </tr>
     </table>
+    <!-- #######Font family###### -->
+    <h1 style="font-family: 'Times New Roman', Times, serif;">Gowthami</h1>
+    <!-- ######Font Size######## -->
+    <h1 style="font-size: 100%;">Gowthami</h1>
+    <!-- while using "%" font size will be depends on the outer element(parent element) also -->
+    <h1 style="font-size: 10px;">Gowthami</h1>    
+    <!-- while using "pixel",font size will be independent/fix in pixels -->
+
+    <!-- *********text Alignment********** -->
+    <h1 style="text-align: start;">Gowthami</h1>
+    <h1 style="text-align: center;">Gowthami</h1>
+    <h1 style="text-align: end;">Gowthami</h1>
+
+<!-- @@@@@ Inline CSS @@@@@@@@ -->
+<h1 style="color: black;">Lakshmipathy</h1>
+<h1 style="color: black;">Gowthami</h1>
+<h1 style="color: red;">Dheeraj</h1>
+<h3 style="color: red;">Diya</h3>
+<!-- here we are repeating the code, to avoid that we use "Internal CSS" -->
+<!-- Internal CSS will be used inside the <head> element(check in head code) -->
+
+<!-- &&&&& External CSS &&&& 
+*****If we have more files in a project, we have to repeat the same codes in two or more files, in this case we use "External CSS" to avoid the code repeatation
+***** External CSS means we write css codes in seperate file & links with the required files using "link" tag. i.e.,
+            <link rel="stylesheet" href="">   here, rel: relation of the link, href=: link of the CSS sheet -->
+
+<!-- ********** In the above 3 CSS types, External CSS is the best way to avoid the code repeatations ************-->
+
+<!-- coming to the priorities of the types of CSS:
+******** when we are executing the code, always 1st preference will be the Inline CSS, then will check for the Internal, then only we go for the External CSS only -->
+
 </body>
 </html>
