@@ -1,0 +1,14 @@
+/* h3 {
+    color: blue;
+} */        
+/* If we have to use same style property for h3 element in 2 or more files */
+
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+#green{
+    color: green;
+}
