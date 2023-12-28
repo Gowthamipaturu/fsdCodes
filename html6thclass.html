@@ -10,7 +10,7 @@ Ex: <span>, <a>, <b>, <br>, <img>, <label> etc.,   -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BlockLevel& Inline Elements, Class & Id</title>
+        <title>BlockLevel& Inline Elements, Class & Id, html i/p types</title>
     </head>
     <body>
         <h1 id="green">Family Names</h1>
@@ -18,10 +18,44 @@ Ex: <span>, <a>, <b>, <br>, <img>, <label> etc.,   -->
         <h3 class="blue">Gowthami</h3>
         <h3 class="blue">Dheeraj</h3>
         <h3 class="red">Diya</h3>
-    </body>
-    </html>
 <!-- Class & ID:
     # The HTML class attribute is used to specify a class for an HTML element, Multiple HTML elements can share the same class. Class attribute can be used on any Html element,it is caseSensitive.
     #The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document. Id name also caseSensitive.
     ## Class can specified with "." followed by the className
-    ## Id can be specified with "#" followed by the idName-->
+    ## Id can be specified with "#" followed by the idName -->
+
+<!-- ## Different types of Inputs: -->
+<form action="">
+    <label for="fname">first name</label><br>
+    <input type="text" id="fname" name="fname"> <br> 
+    <label for="lname">last name</label><br>
+    <input type="text" id="lname" name="lname"> <br><br>
+<!-- ## Different types of Inputs: -->
+    <input type="color" name="color"><br>
+    <input type="email" name="email" id="email">
+    <input type="password" name="password"><br>
+    <input type="reset" value="reset"><br>
+    <input type="date" id="birthday" name="birthday">
+    <input type="date" id="birthday" name="birthday" max="2023-12-31" min="1993-01-01">
+    <input type="datetime-local" id="birthtime" name="birthtyme"><br>
+    <input type="image" src="" alt="choose image" width="" height=""><br>
+    <input type="file" id="myfile" name="myfile">
+    <input type="hidden" id="user" name="user" value="teacher"><br>
+    <!-- hidden input wont show in the form, but shows at the output  -->
+    <input type="number" id="quantity" name="quantity" min="100" max="500">
+    <!-- ********INPUT RESTRICTIONS(w3 schools)******* -->
+    <input type="range" id="vol" name="vol" min="10" max="50">
+    <input type="search" id="gsearch" name="gsearch">
+    <input type="tel" id="phone" name="phone" pattern="[6-9]{1}-[0-9]{4}-[0-9]{5}"> <br>
+    <!-- here pattern will be used for the phone no. first no. will start from 6-9 & remaining are 0-9. also need to mention as 9-7426-27610(same pattern). if we enter any pattern it wont take as i/p -->
+    <input type="time" id="" name=""><br>
+    <input type="url" id="" name=""><br>
+    <input type="week" id="" name=""> <br>
+    <!-- <input type="submit" value="SignUp"><br> -->
+    <button type="submit">SignUp</button>
+<!-- we can use input type/ button type in the forms, have to use single button & multiple inputs. -->
+</form>
+    </body>
+    </html>
+
+

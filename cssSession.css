@@ -1,0 +1,80 @@
+/*  # Inline CSS
+    # Internal CSS
+    # External CSS
+    # css element Selectors: h1,h3,p tag etc., */
+        h1 {
+            color: blue;
+        }
+        p{
+            color: black;
+        }
+    /* # css id selector (#idName) */
+    #green{
+        color: green;
+    }
+    /* # css class selector (.className) */
+    .red{
+        color: red;
+    }
+    /* # css element.class(p.center{}): only <p> element we can use this selector */
+    p.center {
+        text-align: center;
+    }
+    /* # css Universal selector("*"): selects all html elements on the page(*{}) */
+    *{
+        text-align: center;
+    }
+    /* # css grouping selector( h1, h2, p{}) */ 
+    h1, h3, p{
+        color: black;
+        opacity: 1;
+    }
+    /* css colors: RGB, HEX, HSL, Most of the developers will use "Hex" codes in coding. */
+    /* css borders
+    <h1 style "border:size, style, color > Hello World!! </h1>
+        Ex: <h1 style "border:2px, solid, red> Hello World!! </h1>, Examples of     border styles are solid, dotted etc.,
+    ***** for any project we have to use some combination of colors, we can search these combinators from "colorHunt website"
+    #### Opacity: if we decrease opacity, color will be light, increase opacity color will be dark.*/
+    /* Background Image */
+    body {
+        background-image: url("");
+        background-repeat: repeat;
+        /* background image will repeat both horizontally & vertically */
+        background-repeat:repeat-x;
+        /* background image will repeat horizontally */
+        background-repeat: no-repeat;
+        /* image will display once, won't repeat */
+        background-repeat: repeat-y;
+        /* background image will repeat vertically */
+        background-position: left top;
+        /* in position 1st word will be xaxis & second word will be y axis */
+        background-position: right top;
+        background-position: left bottom;
+        background-position: right bottom;
+        background-attachment: fixed;
+        /* image will be fixed & only text/content will scroll */
+        background-attachment: scroll;
+        /* image also scrolls along with the content */
+
+    /* CSS Background ShortHand */
+    background: red url() no-repeat right top;
+    /* by using shorthand, we can write baground properties in the single line */
+    }
+
+/* CSS BORDERS */
+p.one{
+    border-style: solid ;
+    border-width: 2px;
+    border-color: black;
+    border-bottom: dotted;
+    border-top: dotted;
+    /* Shorhand */
+    border: 5px solid red;   
+    /* size, style, color */
+
+    /* BorderRound */
+    border-radius: 5px;
+    /* For rounded shape on edges */
+}
+    
+
