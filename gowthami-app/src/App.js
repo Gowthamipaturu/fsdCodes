@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const name ="Gowthami"
+  const age = 30
+  const isWorking = true
+  const skills = [html, css, javaScript, nodejs]
+  skills.map(item=>{
+    console.log(item)
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>{name}</h1>
+    <h1>{age}</h1>
+    <h1>{isWorking?"yes":"no"} </h1>
+    {skills.map(item=>(
+      <h3>{item}</h3>
+    ))}
+    </>
   );
 }
 
