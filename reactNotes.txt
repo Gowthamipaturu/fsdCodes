@@ -1,0 +1,22 @@
+React Notes
+########@@@@1st Class@@@@###########
+Why React????
+**When we will do the project using React, the webpage won't be refresh for everytime while going to one page to another
+**React will use only one html page & update all the content in single page only.
+**React will use Virtual Dom, html uses real Dom.
+**Real dom means, the content/code everything we can see. If we need to search for the single key/content, the page will be reloaded/refresh everytime.
+**Virtual dom means, the content/code have many files in backend. When we search for the key/content, process will be done in backend & updates the content without reloading the page.
+****Advantage of React is 
+#########Can do single page applications
+#########Build the code in single page, will convert it into html,Css & Javascript 
+*****React Structure:
+#######We have Public & Src Folders
+#######In public folder, will have html file(index.html), favicon.ico, logo etc.,
+#######JQuery - Before react we were using JQuery to send/receive data using Id. Get element by Id using inner html, get element by Id using outer html.
+#######Rending means data sending/displaying
+####### In Src folder, app.css, app.js, app.test.js, index.css, index.js,logo etc.,
+#######index.html will get the data from index.js, using "root.render"
+#######We have one default component in src folder, i.e., App.
+######To create new components:
+@@@
+
