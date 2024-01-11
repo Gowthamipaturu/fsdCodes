@@ -1,4 +1,37 @@
 React Notes
+
+******To start react******  
+1. Need to run "npx create-react-app gowthami-app" in a new terminal
+2. "cd gowthami-app" Change of directory
+3. npm start -->
+<!-- gowthami-app will be created & shows folders.
+        #### node_modules
+        #### public
+        #### src etc., -->
+<!-- FolderStructure
+    1. public: Inside the public folder,
+    ## favicon
+    ## index.html
+    ## logo 
+    ## manifest.json
+    ## robots.txt files will be there. 
+    *****Whenever we run the app, whatever code in index.html will display first. 
+    *****we update the content in index.html page inside <div>element.
+    *****We need to send the data using "root" id inside the <div> element, before react we are using "jQuery" to get data using jQuery element by id.
+    2. src: Inside src folder,
+    ## app.css
+    ## app.js
+    ## app.test.js
+    ## index.js
+    ## logo.svg
+    ## reportWebVitals.js
+    ##setupTests.js
+    ***** First executing file is index.js, index.js will give the data to index.html which is in src folder.
+    ***** root.render(here, render means display/sending data)
+    ##################################################################################### rafce: ReactArrowFunctionComponentExport
+    #### we can create components(files we can call as components in react) to make simple & fast execution/correcting codes.
+    #### We can create(<app/>) componet & import in index.js & export to index.html
+
 ########@@@@1st Class@@@@###########
 Why React????
 **When we will do the project using React, the webpage won't be refresh for everytime while going to one page to another
@@ -16,7 +49,50 @@ Why React????
 #######Rending means data sending/displaying
 ####### In Src folder, app.css, app.js, app.test.js, index.css, index.js,logo etc.,
 #######index.html will get the data from index.js, using "root.render"
-#######We have one default component in src folder, i.e., App.
+#######We have one default component in src folder, i.e., App.js
 ######To create new components:
-@@@
+@@@ In parent component <componentName/>(Ex: <About/>)
+@@@ Create a new component, name it as About.js.
+@@@ To open About.js, we can directly go to the component/can open from parent component using "ctrl+right click"
+@@@After creating the component, "rafce"(ReactArrowFunctionExportComponent),Enter
+@@@Import About from ./About in the parent component.
+######To simplify & fast checking of codes, we will divide into components
+***********In react we can share the data using single set of component only
+*********** <></> React Fragment.
 
+@@@@@@@@@@@@@@@@@@@ 2nd Class @@@@@@@@@@@@@@@@@@@@@@@@@
+### In React JSX, we can write Javascript & html in single component
+### we can return Javascript code before return function & html code in return function.
+%%%%%% Props:
+### We use "props" to send data from one component to another
+Ex: ParentComponent: <About fname={name} age={age} isTeacher={isTeacher} skills={skills} data={data}/> 
+    ChildComponent :
+    const About = (props) => {
+    console.log("props", props)
+  return (
+    <>
+    <h1>{props.fname}</h1>
+    <h1>{props.age}</h1>
+    <h1>{props.isWorking?"yes":"no"}</h1>
+    {props.skills.map((skill)=>(
+        <h1>{skill}</h1>
+    ))}
+
+    <h3>{props.data.name}</h3>
+    <h3>{props.data.age}</h3>
+    <h3>{props.data.city}</h3>
+    <h3>{props.data.kids.son}</h3>
+    <h3>{props.data.kids.dtr}</h3>
+    </>
+  )
+}
+#######******Before return, Javascript code
+####### Inside return html code along with js code
+####### while writing Objects, we write key value as index.
+
+######################## 3rd Class #####################
+***In React, data can be send in unidirection only, in rare cases will send bidirectional using "CallBack function"
+*** Using props, we send data from Parent to Child component.
+*** We can't send data from child to parent.
+*** We use "CallBack" function to send data in bidirectional.
+ 
