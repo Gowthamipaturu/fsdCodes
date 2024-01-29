@@ -95,4 +95,60 @@ Ex: ParentComponent: <About fname={name} age={age} isTeacher={isTeacher} skills=
 *** Using props, we send data from Parent to Child component.
 *** We can't send data from child to parent.
 *** We use "CallBack" function to send data in bidirectional.
- 
+
+@@@@@@@@Count, StateHandlers@@@@@@@@@@@@@@@@@@@@@@@
+### initially count=0, to increase/decrease the count we use "+/-" buttons.
+### we are mentioning "+/-" as incrementHandler & decrementHandler in the code, & before return writing functions for the same.
+
+Before return:
+
+const decrementHandler=()=>{
+        count-=1;
+    }
+    console.log(count);
+    
+Inside return:
+      <button onClick={decrementHandler}>-</button>
+
+### now we are increasing count, but it won't show in the console.
+### Count is increasing but not displaying, so we use dom manipulation using "States".
+###In html real dom will be used. so only, every time page will be refresh & shows data.
+### In react, we use real & virtual doms(useStates). virtual dom always works on the particular changes & gives to real dom. so the page won't refresh & gives the page what we require.
+
+#### Using of Virtual dom(useState), we can able to see the changes in console,
+
+const Count = () => {
+    const[count, setCount]=useState(0)
+    // let count=0;
+    const incrementHandler=()=>{
+        setCount(count+1);
+    }
+    const decrementHandler=()=>{
+        setCount(count-1);
+    }
+    console.log(count); 
+  return (
+    <>
+        <button onClick={decrementHandler}>-</button>
+        <span>{count}</span>
+        <button onClick={incrementHandler}>+</button>
+    </>
+  )
+}
+
+### like above, we can write multiplication & division handles.
+### we can use Css properties here,
+
+<span style={{backgroundColor:"blue"}}>{count}</span>
+
+### If we need to change color for every click,
+
+
+Before return fn:
+const [isChangeColor, setIsChangeColor]=useState(!true)
+
+const colorChangeHandler=()=>{
+        setIsChangeColor(!false);
+    }
+Inside retun:
+<button onClick={colorChangeHandler}>Color Change</button>

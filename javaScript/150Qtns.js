@@ -110,13 +110,44 @@ for(let i=1; i<=columns; i++){
 }
 
 // task(EqualateralTriangle)
-let r = 5; 
-for (let i = 1; i <= r; i++) { 
-    let str = "*"; 
-    let space = ' '; 
-    console.log(str.repeat(i * 2 - 1));
-    // console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
-} 
+
+const r=5;
+for(let i=1; i<=r; i++){
+    let pattern="*";
+    for(j=i; j<r;j++){
+        let space="";
+        console.log(pattern.repeat(i+1));
+        console.log(space.repeat((i+1))+ pattern.repeat(i) );
+    }
+    // let space = ' '; 
+    // console.log(space.repeat((i+1))+ pattern.repeat(i) );
+    // console.log(pattern.repeat(i));
+}
+// let r = 5; 
+// for (let i = 1; i <= r; i++) { 
+//     let str = "*"; 
+//     let space = ' '; 
+//     console.log(str.repeat(i * 2 - 1));
+//     // console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+// } 
+
+// const num = 5;
+// let patt = '';
+// for (let i = 1; i <= n; i++) {
+//     let row = '';
+//     for (let j = 1; j <= n - i; j++) {
+//         row += ' ';
+//     }
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//         if (j === 1 || j === 2 * i - 1 || i === n) {
+//             row += '*';
+//         } else {
+//             row += ' ';
+//         }
+//     }
+//     str += row + '\n';
+// }
+// console.log(str);
 
 // **9. Find Largest Element in an Array:**
 // Write a program to find the largest element in an array using a `for` loop.
@@ -138,59 +169,6 @@ for(let i=inputArr.length-1; i>=0; i--){
 reverseArr.push(inputArr[i]);
 }
 console.log(reverseArr);
-
-// **String Methods:**
-
-// 1. How do you find the length of a string in JavaScript?
-    //@ String.length()
-// 2. What method is used to convert a string to lowercase in JavaScript?
-    //@ String.toLowerCase()
-// 3. Explain the purpose of the `toUpperCase()` method in JavaScript.
-    //@ To Convert lower to uppercase
-// 4. How can you check if a string contains a specific substring in JavaScript?
-    //@ String.substring(indexValue, length of the string from index value)
-// 5. What does the `charAt()` method do in JavaScript?
-    //@ indeValue of the char in an Array/String
-// 6. How do you replace a substring within a string using JavaScript?
-    //@ String.replace()
-// 7. What method can be used to split a string into an array in JavaScript?
-    //@ strng.split()
-// 8. How can you remove leading and trailing whitespace from a string in JavaScript?
-    //@ Use trim()(removes white space at start & end of the string), trimStart(), trimEnd()
-// 9. What method is used to concatenate two strings in JavaScript?
-    //@ String.concat()
-// 10. How do you check if a string starts with a specific prefix in JavaScript?
-    //@ The startsWith() method returns true if a string starts with a specified string. Otherwise it returns false . The startsWith() method is case sensitive.
-
-// **Array Methods:**
-
-// 11. How do you add an element to the end of an array in JavaScript?
-    //@ arr[i] or arr.push()
-// 12. What method is used to remove the last element from an array in JavaScript?
-    // @ arr.pop()
-// 13. Explain the purpose of the `push()` method in JavaScript.
-    // Adding Elements/list to array using "push()" at the EndingPosition
-// 14. How do you find the index of an element in an array in JavaScript?
-    // @ arr[i], arr[i][i][i](if array has child arrays)
-// 15. What is the difference between `pop()` and `shift()` methods in JavaScript?
-    // @ Both are used to remove elements in an array, pop() to remove at the end, shift() to remove at the starting positions.
-// 16. How can you reverse the elements of an array in JavaScript?
-    // @ arr.reverse()
-// 17. In JavaScript, what does the `splice()` method do?
-    // @*********splice methode will be used only for array's. In splice existing array will be modified/updated & returns the output to the existing array itself, but in slice elements will be extract& returns a new array as output. In splice(parameter1,parameter2,parameter3) 
-        //here, p1 is index position where the element needs modify,*/
-        //p2 indicates, how many elements needs to remove at the p1 specified index*/
-        // p3 indicates, elements to be add*/
-// 18. What method can you use to check if an element exists in an array in JavaScript?
-    // @ includes(), indexof() 
-// 19. How do you sort an array of numbers in ascending order in JavaScript?
-    // @ sort()
-// 20. Explain the purpose of the `concat()` method in JavaScript.
-    // @ concat() method is used to add 2 arrays as a single array. 
-        // Ex: arr1.concat(arr2, elements)  ###we can add arrays with elements also
-
-
-
 
 // **Question 1: Reverse a String**
 
@@ -216,4 +194,19 @@ for(i=1; i<input.length; i++){
 }
 console.log(maxNo);
 
+// **Question 3: Count the Occurrences of a Character in a String**
+
+// Write a function `countChar` that takes a string and a character as input and returns the number of times that character appears in the string.
+
+// const string1="Dheeraj"
+// let f="D", s="h", o;
+// // console.log(first);
+// // console.log(second);
+// for(let i=0; i<=; i++){
+//     // next=first+second;
+    
+//     console.log(next);
+//     first=second;
+//     second=next;
+// }
 

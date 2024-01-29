@@ -10,10 +10,10 @@ console.log("output:",output);
 
 
 
-//**********Task*********//
-//input: gowthamilakshmipathy.k@gmail.com
-//output1: gow******************@gmail.com
-//output2: gow***************y.k@gmail.com
+// //**********Task*********//
+// //input: gowthamilakshmipathy.k@gmail.com
+// //output1: gow******************@gmail.com
+// //output2: gow***************y.k@gmail.com
 
 
 // let emailId ="gowthamilakshmipathy.k@gmail.com";
@@ -29,7 +29,7 @@ console.log("output:",output);
 // let finalOut = firstFinalOut +"@"+ domain;
 // console.log(finalOut);
 
-// //******ShortHand */
+// // //******ShortHand */
 
 let emailId= "gowthamilakshmipathy.k@gmail.com"
 let splitData3 = emailId.split("@");
@@ -40,7 +40,7 @@ let firstPart1= idPart1.slice(0,3);
 const finalOut1= firstPart1.padEnd(idPart1.length,"*")+"@"+domain1;
 console.log(finalOut1);         //gow*******************@gmail.com
 
-// //output2: gow***************y.k@gmail.com
+// // //output2: gow***************y.k@gmail.com
 let emailId1= "gowthamilakshmipathy.k@gmail.com"
 let splitData4 = emailId1.split("@");
 console.log("splitData",splitData4);
