@@ -152,3 +152,7 @@ const colorChangeHandler=()=>{
     }
 Inside retun:
 <button onClick={colorChangeHandler}>Color Change</button>
+
+*************Navigation & Routes*******
+### We need to install routes using, 
+              "npmnpm i react-router-dom"

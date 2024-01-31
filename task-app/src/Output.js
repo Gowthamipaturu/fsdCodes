@@ -5,14 +5,14 @@ const Output = (props) => {
 
   return (
     <>
-    <h1>{props.fName}</h1>
-    <h1>{props.lName}</h1>
-    <h1>{props.phNo}</h1>
-    <h1>{props.emailId}</h1>
-    <h1>{props.gender}</h1>
-    <h1>{props.city}</h1>
+    <h1>{props.formData.fName}</h1>
+    <h1>{props.formData.lName}</h1>
+    <h1>{props.formData.phNo}</h1>
+    <h1>{props.formData.emailId}</h1>
+    <h1>{props.formData.gender}</h1>
+    <h1>{props.formData.city}</h1>
 
-    <button type="submit">Submit</button>
+    {/* <button type="submit">Submit</button> */}
     </>
   )
 }

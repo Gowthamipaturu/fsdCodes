@@ -13,6 +13,8 @@ const Form = () => {
         city: "",
     });
 
+    const [showOutput, setShowOutput]= useState(false);
+
     const handleChange =(e) =>{
         // const{name, value}= e.target;
         console.log(e.target.name, e.target.vlaue);
@@ -22,6 +24,7 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData)
+        setShowOutput(true);
     }
 
   return (
@@ -100,11 +103,11 @@ const Form = () => {
         </label>
         </div>
         <br/>
-        
+        <button type="submit">Submit</button>
     </form>
 
-    <Output FirstName={FormData.fName} LastName={FormData.lName} PhoneNo={FormData.phNo} EmailId={FormData.emailId} Gender={FormData.gender} City={FormData.city}  />
-
+    {/* <Output FirstName={FormData.fName} LastName={FormData.lName} PhoneNo={FormData.phNo} EmailId={FormData.emailId} Gender={FormData.gender} City={FormData.city}  /> */}
+{showOutput?(< Output formData={formData}/>):null}
     </>
   )
 }
