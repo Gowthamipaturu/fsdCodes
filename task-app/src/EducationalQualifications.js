@@ -1,5 +1,5 @@
 import React from 'react'
-import WorkHistory from './WorkHistory'
+
 
 const EducationalQualifications = () => {
   return (
@@ -31,7 +31,6 @@ const EducationalQualifications = () => {
         <td>84.2%</td>
     </tr>
 </table>
-<WorkHistory/>
 
 </>
   )

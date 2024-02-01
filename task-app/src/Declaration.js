@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from './Form'
+
 
 const Declaration = () => {
   return (
@@ -10,9 +10,6 @@ const Declaration = () => {
     <h4>Place:</h4>
     <br></br>
     <h3> Gowthami</h3>
-
-    <Form/>
-
     </>
   )
 }

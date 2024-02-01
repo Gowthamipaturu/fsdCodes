@@ -1,5 +1,5 @@
 import React from 'react'
-import EducationalQualifications from './EducationalQualifications'
+
 
 const CareerObjective = () => {
   return (
@@ -8,7 +8,6 @@ const CareerObjective = () => {
     <span>  To get an opportunity where I can make best of my potential and contribute to the 
         organization’s growth.</span> 
         
-        <EducationalQualifications/>
         </>
   )
 }

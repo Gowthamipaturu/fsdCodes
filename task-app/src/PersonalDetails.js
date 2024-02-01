@@ -1,5 +1,5 @@
 import React from 'react'
-import Declaration from './Declaration'
+
 
 const PersonalDetails = () => {
   return (
@@ -11,8 +11,6 @@ const PersonalDetails = () => {
         <li>Marital Status: Married</li>
         <li>Languages Known: Telugu, English, Tamil, Kannada</li>
         </ul>
-    
-    <Declaration/>
     </>
   )
 }
