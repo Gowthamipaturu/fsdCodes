@@ -14,6 +14,7 @@ const Form = () => {
     });
 
     const [showOutput, setShowOutput]= useState(false);
+    const [newForm, setNewForm]= useState(false);
 
     const handleChange =(e) =>{
         // const{name, value}= e.target;
@@ -25,7 +26,9 @@ const Form = () => {
         e.preventDefault();
         console.log(formData)
         setShowOutput(true);
+        setNewForm(true);
     }
+
 
   return (
     <>
@@ -108,6 +111,7 @@ const Form = () => {
 
     {/* <Output FirstName={FormData.fName} LastName={FormData.lName} PhoneNo={FormData.phNo} EmailId={FormData.emailId} Gender={FormData.gender} City={FormData.city}  /> */}
 {showOutput?(< Output formData={formData}/>):null}
+{/* {newForm?(<button type="submit">NewForm</button>):(<Form/>)} */}
     </>
   )
 }
