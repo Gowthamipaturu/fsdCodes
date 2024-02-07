@@ -210,3 +210,10 @@ console.log(maxNo);
 //     second=next;
 // }
 
+
+// **Question 4: Remove Duplicates from an Array**
+// Write a function `removeDuplicates` that takes an array of numbers as input and returns a new array with duplicate values removed.
+
+// **Question 5: Check for Palindrome**
+// Write a function `isPalindrome` that takes a string as input and returns `true` if it's a palindrome (reads the same forwards and backward), and `false` otherwise.
+
