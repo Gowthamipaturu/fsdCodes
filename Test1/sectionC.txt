@@ -1,0 +1,47 @@
+Section C: Bonus Question (10 marks)
+Explain the concept of React state and how it differs from props.
+
+#######Answer#########
+
+States:
+States are used to manipulate the data/dom(virtual dom).
+Props:
+Props are used to pass the data from one component(Parent Component) to another component(Child Component).
+Diff b/w States & Props:
+The key difference between state and props is that state is managed within a component, while props are passed from a parent component to a child component. State is used to manage internal component data, while props are used to pass data from a parent component to a child component.
+
+
+Section C: Bonus Question (10 marks)
+Explain the difference between for and for...in loops in JavaScript. When would you use each one?
+
+**********Answer******
+If we need to run the same code repeatedly, each time with a different value we use loops.
+
+For Loop:
+Syntax for for loop:
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+Expression 1: Sets a variable before the loop starts (let i = 0).
+Expression 2: Defines the condition for the loop to run (Ex: i<=5).
+Expression 3: Increases a value (i++) each time the code block in the loop has been executed.
+
+For In Loop:
+Syntax for for(in):
+for (key in object) {
+  // code block to be executed
+}
+The for in loop iterates over a object
+Each iteration returns a key
+The key is used to access the value of the key
+
+For Of Loop:
+It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more.
+Syntax for for(of):
+for (variable of iterable) {
+  // code block to be executed
+}
+variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+iterable - An object that has iterable properties.
+
+For loop will be used everywhere in looping. ForIn/For of will be used in arrays when we need index values & Objects with particular key values.
