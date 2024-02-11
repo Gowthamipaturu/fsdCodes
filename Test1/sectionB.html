@@ -1,0 +1,49 @@
+<!-- 
+    1. Write HTML and CSS code to create a simple webpage layout with a header, navigation bar, content area, and footer.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleWebPage</title>
+    <link rel="stylesheet" href="sectionB.css">
+</head>
+<body>
+    <div class="card text-center">
+        <div class="card-header">
+          Header
+        </div>
+        <div class="card-body">
+            <h1 class="card-title">Simple Web Page</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="form-floating">
+            <label for="floatingTextarea">ContentArea</label> <br>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            
+          </div>
+        <div class="card-footer text-muted">
+          Footer
+        </div>
+      </div>
+</body>
+</html>
