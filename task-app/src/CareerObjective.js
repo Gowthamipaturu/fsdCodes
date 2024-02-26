@@ -6,7 +6,7 @@ const CareerObjective = () => {
     <>
     <h3>Career Objective</h3>
     <span>  To get an opportunity where I can make best of my potential and contribute to the 
-        organization’s growth.</span> 
+        organization's growth.</span> 
         
         </>
   )
