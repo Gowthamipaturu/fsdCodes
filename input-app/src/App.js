@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+// import { useState } from 'react';
 
 function App() {
+
+  // const [kidsData, setKidsData]= useState([]);
+  // const [modalInfo, setModalInfo]= useState([]);
+  // const [showModal, setShowModal]= useState(false);
+
+  // const [show, setShow]= useState(false);
+  // const handleClose =()=>setShow(false);
+  // const handleShow =()=>setShow(true);
 
   const KidsData=[
     {
@@ -77,19 +86,23 @@ function App() {
     }
   ];
 
+  // const rowEvents= {
+  //   onClick: (e, row)=>{
+  //     console.log(row);
+  //     setModalInfo(row);
+  //     toggleTrueFalse();
+  //   }
+  // };
+
+  // const toggleTrueFalse=()=>{
+  //   setShowModal(handleShow);
+  // };
+  
   return (
     <>
     <h1>Kids Details</h1>
-    {KidsData.map((item)=>(
-      <>
-      {/* <h3>{item.name}</h3>
-      <h3>{item.age}</h3>
-      <h3>{item.mother}</h3>
-      <h3>{item.father}</h3>
-      <h3>{item.bloodgroup}</h3> */}
-
-<table class="table">
-  <thead>
+    <table class="table">
+    <thead>
     <tr>
       <th scope="col">Sno</th>
       <th scope="col">Name</th>
@@ -100,18 +113,12 @@ function App() {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      {/* <th scope="row">1</th> */}
-      <td>{item.sno}</td>
-      <td>{item.name}</td>
-      <td>{item.age}</td>
-      {/* <td>{item.mother}</td>
-      <td>{item.father}</td>
-      <td>{item.bloodgroup}</td> */}
-    </tr>
-  </tbody>
-</table>
-
+    {KidsData.map((row, item)=>(
+      <tr>
+        <td>{item+1}</td>
+      <td>{row.name}</td>
+      <td>{row.age}</td>
+      
 {/* <!-- Button trigger modal --> */}
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   More details
@@ -126,19 +133,24 @@ function App() {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <h3>{KidsData[item]}</h3>
+      {/* <h3>{KidsData[item]}</h3> */}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
-</>
-)  
+</tr>
+      )  
 )}
-  </>
+</tbody>
+  {/* rowEvents={rowEvents}
+  {show?{kidsData}:null} */}
+  </table>
+
+</>
+
   )
 }
 
