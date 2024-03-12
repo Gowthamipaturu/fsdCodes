@@ -1,0 +1,29 @@
+h1,h3{
+    color: blue;
+}
+form{
+    margin-bottom: 20px;
+}
+#task{
+    width: 80% ;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+    box-sizing: border-box;
+}
+button{
+    background-color:blue;
+    width:20% ;
+    color: white;
+    padding:14px 20px ;
+    margin:8px 0 ;
+    border: none;
+    cursor: pointer;
+}
+li{
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.done{
+    text-decoration: line-through;
+}
