@@ -18,6 +18,11 @@ app.get('/',  (req, res)=> {
   res.send("<h1>Gowthami's Resume</h1>")
 })
 
+app.post('/',  (req, res)=> {
+  console.log()
+  res.send("Your data has been submitted")
+})
+
 app.get('/careerobjective',  (req, res)=> {
     res.send("<h3>Career Objective</h3> To get an opportunity where I can make best of my potential and contribute to the organization's growth.")
   })
