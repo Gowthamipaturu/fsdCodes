@@ -3,6 +3,7 @@
 // mongodb+srv://gowthamilakshmipathyk:<password>@cluster0.hlpgf31.mongodb.net/?retryWrites=true&w=majority
 
 const express = require('express');
+const { default: mongoose } = require('mongoose');
 const app = express()
 
 // app.get('/',  (req, res)=> {
@@ -14,6 +15,15 @@ const app = express()
 
 // app.listen(3000)
 
+// Connect to MongoDB
+
+mongoose
+.connect(
+  mongodb+srv://gowthamilakshmipathyk:Marrued@13@cluster0.hlpgf31.mongodb.net/?retryWrites=true&w=majority
+  {
+    useNewUrlParser
+  }
+)
 app.get('/',  (req, res)=> {
   res.send("<h1>Gowthami's Resume</h1>")
 })
